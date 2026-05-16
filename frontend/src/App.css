@@ -1,0 +1,234 @@
+/* ===== LANDING PAGE ===== */
+
+.landingPageContainer {
+  width: 100vw;
+  height: 100vh;
+  background:
+    linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.92),
+      rgba(0, 0, 0, 0.75)
+    ),
+    url("/public/background.png");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  overflow: hidden;
+}
+
+/* ===== NAVBAR ===== */
+
+.landingPageContainer nav {
+  padding: 1.3rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(12px);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* LOGO */
+
+.navHeader h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+
+  background: linear-gradient(90deg, #ff9839, #ffb347);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.navHeader h2:hover {
+  transform: scale(1.03);
+  text-shadow: 0 0 20px rgba(255, 152, 57, 0.4);
+}
+
+/* NAV ITEMS */
+
+.navlist {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.navlist p,
+.navlist div[role="button"] p {
+  position: relative;
+  cursor: pointer;
+
+  font-size: 1rem;
+  font-weight: 500;
+
+  transition: 0.3s ease;
+}
+
+/* HOVER UNDERLINE */
+
+.navlist p::after,
+.navlist div[role="button"] p::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+
+  width: 0%;
+  height: 2px;
+
+  background: #ff9839;
+  transition: 0.3s ease;
+}
+
+.navlist p:hover::after,
+.navlist div[role="button"] p:hover::after {
+  width: 100%;
+}
+
+.navlist p:hover,
+.navlist div[role="button"] p:hover {
+  color: #ff9839;
+}
+
+/* ===== MAIN SECTION ===== */
+
+.landingMainContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 4rem 5rem;
+  height: calc(100vh - 90px);
+}
+
+/* LEFT SIDE */
+
+.landingMainContainer > div:nth-child(1) {
+  max-width: 650px;
+}
+
+.landingMainContainer h1 {
+  font-size: 5rem;
+  line-height: 1.1;
+  font-weight: 800;
+
+  margin-bottom: 1rem;
+}
+
+.landingMainContainer h1 span {
+  color: #ff9839;
+  text-shadow: 0 0 25px rgba(255, 152, 57, 0.45);
+}
+
+.landingMainContainer p {
+  font-size: 1.5rem;
+  color: #d1d1d1;
+  margin-top: 1rem;
+}
+
+/* ===== GET STARTED BUTTON ===== */
+
+.landingMainContainer div[role="button"] {
+  width: fit-content;
+  margin-top: 2rem;
+
+  background: linear-gradient(135deg, #ff9839, #ff7b00);
+
+  padding: 1rem 2rem;
+  border-radius: 16px;
+
+  box-shadow:
+    0 10px 30px rgba(255, 152, 57, 0.35);
+
+  transition: 0.3s ease;
+
+  cursor: pointer;
+}
+
+.landingMainContainer div[role="button"]:hover {
+  transform: translateY(-4px) scale(1.03);
+
+  box-shadow:
+    0 15px 40px rgba(255, 152, 57, 0.5);
+}
+
+.landingMainContainer div[role="button"] a {
+  text-decoration: none;
+  color: white;
+
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* ===== RIGHT IMAGE ===== */
+
+.landingMainContainer > div:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landingMainContainer > div:nth-child(2) img {
+  width: 34vw;
+  max-width: 500px;
+
+  filter:
+    drop-shadow(0 0 30px rgba(255, 152, 57, 0.2));
+
+  transition: 0.4s ease;
+}
+
+.landingMainContainer > div:nth-child(2) img:hover {
+  transform: scale(1.03) rotate(-2deg);
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media screen and (max-width: 1000px) {
+  .landingMainContainer {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 3rem;
+  }
+
+  .landingMainContainer h1 {
+    font-size: 3.5rem;
+  }
+
+  .landingMainContainer > div:nth-child(2) img {
+    width: 70vw;
+  }
+
+  .landingPageContainer nav {
+    padding: 1rem 1.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .landingMainContainer h1 {
+    font-size: 2.6rem;
+  }
+
+  .landingMainContainer p {
+    font-size: 1.1rem;
+  }
+
+  .navlist {
+    gap: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .navHeader h2 {
+    font-size: 1.5rem;
+  }
+}
+
+
