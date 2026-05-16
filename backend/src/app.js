@@ -18,7 +18,8 @@ app.set("port", (process.env.PORT || 8000));
 app.use(
   cors({
     origin: "https://apnavideocall-video-conferencing-wy0n.onrender.com",
-    credentials: true,
+    methods: ["GET", "POST"],
+    credentials: true
   })
 );
 
