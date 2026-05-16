@@ -1,13 +1,13 @@
 # 🎥 ApnaVideoCall – Video Conferencing Platform
 
-A modern full-stack video conferencing platform built using the MERN stack and WebRTC technology.  
+A modern **full-stack video conferencing platform** built using the **MERN stack** and **WebRTC technology**.  
 ApnaVideoCall enables users to create secure real-time video meetings, chat instantly, share meeting history, and connect seamlessly with others.
 
 ---
 
 # 🚀 Overview
 
-ApnaVideoCall is a real-time communication platform designed for smooth and secure online meetings.  
+**ApnaVideoCall** is a real-time communication platform designed for smooth and secure online meetings.  
 The project focuses on peer-to-peer video communication using WebRTC and Socket.io while maintaining a clean modern UI inspired by professional conferencing applications.
 
 This project demonstrates:
