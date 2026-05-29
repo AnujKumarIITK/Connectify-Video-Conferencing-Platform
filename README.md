@@ -218,7 +218,7 @@ This project demonstrates:
 
 # 🚀 Why This Project Matters
 
-ApnaVideoCall showcases strong understanding of:
+Connectify showcases strong understanding of:
 
 - Real-time application development
 - WebRTC architecture
@@ -251,7 +251,7 @@ If you have feedback, suggestions, or opportunities:
 
 # 📌 Final Note
 
-ApnaVideoCall is a production-style real-time video conferencing application that combines modern frontend development, backend architecture, and WebRTC-based communication into a complete full-stack project.
+Connectify is a production-style real-time video conferencing application that combines modern frontend development, backend architecture, and WebRTC-based communication into a complete full-stack project.
 
 It reflects strong practical implementation skills in:
 
